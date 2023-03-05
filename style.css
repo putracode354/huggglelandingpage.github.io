@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(257, 40%, 49%);
+  --secondary-color: hsl(300, 69%, 71%);
+}
+
+
+
+
+body {
+  background: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--primary-color);
+  font-family: 'Open Sans', sans-serif;
+  color: #dfdfdf;
+}
+
+.container {
+  max-width: 90%;
+  margin: 4em auto;
+  min-height: 100vh;
+}
+
+main {
+  text-align: center;
+}
+
+header img {
+  text-align: left;
+  max-width: 30%;
+  margin: 2em 0;
+}
+
+main img {
+  max-width: 100%;
+  margin-bottom: 3em;
+}
+
+.content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  padding-bottom: 1em;
+  font-weight: 600;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.7em;
+  padding-bottom: 2em;
+}
+
+.content button {
+  padding: 1em 2em;
+  width: 70%;
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 2em;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.295);
+}
+
+.content button:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+
+.sosial-media {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 50%;
+  margin: 4em auto;
+
+}
+
+.sosial-media a {
+  color: #fff;
+  width: 2em;
+  height: 2em;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sosial-media a:hover {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+
+}
+
+
+
+
+@media(min-width:1440px) {
+  body {
+    background: url("images/bg-desktop.svg");
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+  main .row {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    text-align: left;
+  }
+
+
+
+  header img {
+    margin-top: 0;
+    margin-bottom: 5em;
+    max-width: 12%;
+  }
+
+  .content {
+    margin-top: -10em;
+  }
+
+  .content h2 {
+    font-size: 2.1rem;
+    padding-bottom: .5em;
+
+  }
+
+  .content p {
+    padding-bottom: 1.2em;
+    font-size: 1.1rem;
+
+  }
+
+
+  .content button {
+    max-width: 30%;
+  }
+
+  .sosial-media {
+    max-width: 12%;
+    margin-right: 0;
+  }
+}
+
+
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #fff;
+  font-weight: bold;
+}
